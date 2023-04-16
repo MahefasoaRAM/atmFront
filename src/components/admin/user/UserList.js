@@ -19,7 +19,7 @@ function UserList() {
 
   const userdelete = (id) => {
     axios.delete(`/api/userdelete/${id}`).then(res => {
-      fetch()
+      fetchdata()
     })
   }
 
