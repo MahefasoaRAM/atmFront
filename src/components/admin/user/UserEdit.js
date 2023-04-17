@@ -99,7 +99,7 @@ function UserEdit(props) {
               </div>
               <div className="form-group mb-3">
                 <label className="text-capitalize">balance</label>
-                <input type="text" name="balance" className='form-control' onChange={handle} value={input.balance} />
+                <input type="number" min="0" step="any" name="balance" className='form-control' onChange={handle} value={input.balance} />
               </div>
               <div className="form-group mb-3">
                 <label className="text-capitalize">pin</label>

@@ -53,7 +53,7 @@ function Withdraw() {
               <form onSubmit={submit}>
                 <div className="form-group mb-3">
                   <label className="text-capitalize">amount</label>
-                  <input type="text" name="amount" className='form-control' onChange={handle} value={input.amount} />
+                  <input type="number" min="0" step="any" name="amount" className='form-control' onChange={handle} value={input.amount} />
                 </div>
                 <div className="form-group text-center">
                   <button type='submit' className='btn btn-primary text-capitalize'>withdraw</button>
